@@ -1,0 +1,10 @@
+.DS_Store
+builds/*
+packer_cache/
+output-virtualbox-iso/
+output-vmware-iso/
+.vagrant/
+iso/
+*.iso
+*.box
+
