@@ -23,7 +23,6 @@
       "ssh_port": 22,
       "ssh_timeout": "1000s",
       "shutdown_command": "sudo shutdown -P now",
-      "tools_upload_flavor": "linux",
       "vm_name": "packer-centos-7-x86_64",
       "version": 14,
       "vmx_data": {
