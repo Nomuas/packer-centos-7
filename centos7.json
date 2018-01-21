@@ -24,12 +24,21 @@
       "ssh_timeout": "1000s",
       "shutdown_command": "sudo shutdown -P now",
       "vm_name": "packer-centos-7-x86_64",
-      "version": 14,
+      "vmdk_name": "packer-centos-7-x86_64",
+      "vmx_remove_ethernet_interfaces": true,
+      "version": 14, 
       "vmx_data": {
         "cpuid.coresPerSocket": "1",
         "memsize": "1024",
         "numvcpus": "2"
       }
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "execute_command": "sudo bash '{{.Path}}'",
+      "script": "scripts/packages.sh"
     }
   ],
   "post-processors": [
